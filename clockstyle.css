@@ -1,0 +1,66 @@
+img{
+  height:400px;;
+  width:400px;
+  position: absolute;
+  left:600px;;
+  top:20%;
+
+}
+
+body{
+  background-color: black;
+}
+
+.hour{
+  background-color: black;
+  height:70px;
+  width:10px;
+  position: absolute;
+  top:275px;
+  left:795px;
+  animation: rotate 43200s infinite linear;
+  transform-origin: 50% 100%;
+
+}
+
+.minute{
+  background-color: black;
+  height:110px;
+  width:8px;
+  position: absolute;
+  left:796px;
+  top:235px;
+  animation: rotate 3600s infinite linear;
+  transform-origin: 50% 100%;
+
+
+}
+
+.second{
+  background-color: black;
+  height:150px;
+  width:4px;
+  position: absolute;
+  left: 798px;
+  top: 220px;
+  z-index: 3;
+  animation: rotate 60s infinite steps(60);
+  transform-origin: 50% 84.61%;
+
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.center {
+    background: black;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top:333px;
+    left:790px;
+}
